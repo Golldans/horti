@@ -19,6 +19,15 @@ public class AngiospermEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id_angiosperm;
 
+    @Column
+    private String common_name;
+    
+    @Column
+    private String scientific_name;
+    
+    @Column
+    private Integer id_genus;
+    
     @CreatedDate
     private LocalDateTime created_at;
 
